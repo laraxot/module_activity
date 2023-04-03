@@ -33,6 +33,7 @@ class ActivityController extends Controller {
      * @return Renderable
      */
     public function store(Request $request) {
+        return view('activity::store');
     }
 
     /**
@@ -65,6 +66,7 @@ class ActivityController extends Controller {
      * @return Renderable
      */
     public function update(Request $request, $id) {
+        return view('activity::update');
     }
 
     /**
@@ -75,5 +77,6 @@ class ActivityController extends Controller {
      * @return Renderable
      */
     public function destroy($id) {
+        return view('activity::destroy');
     }
 }
