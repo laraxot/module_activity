@@ -19,5 +19,8 @@
         "psr-4": {
             "Modules\\Activity\\": ""
         }
+    },
+    "require": {
+        "spatie/laravel-activitylog": "^4.7"
     }
 }
