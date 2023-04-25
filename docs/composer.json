@@ -1,4 +1,8 @@
 {
+    "name": "laraxot/module_activity",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://laraxot.github.io/module_activity",
     "require": {
         "tightenco/jigsaw": "^1.6",
         "tightenco/jigsaw-docs-template": "^1.1",
