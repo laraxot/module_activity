@@ -1,12 +1,10 @@
 {
-    "name": "nwidart/activity",
+    "name": "laraxot/module_activity",
     "description": "",
-    "authors": [
-        {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Marco Sottana",
+        "email": "marco.sottana@gmail.com"
+    }],
     "extra": {
         "laravel": {
             "providers": [
@@ -24,9 +22,37 @@
     "require": {
         "spatie/laravel-activitylog": "^4.7",
         "illuminate/contracts": "^8.83|^9.30",
-        "laraxot/module_xot": "dev-master"
+        "laraxot/module_xot": "dev-master",
+        "laraxot/module_cms": "dev-master"
     },
     "require-dev": {
         "nunomaduro/larastan": "^2.0"
-    }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
+        ],
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [{
+        "type": "composer",
+        "url": "https://wire-elements-pro.composer.sh"
+    }]
 }
