@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models\Panels;
 
-use Modules\Cms\Models\Panels\XotBasePanel;
+use Modules\Xot\Models\Panels\XotBasePanel;
 
 /**
  * Class _ModulePanel.
