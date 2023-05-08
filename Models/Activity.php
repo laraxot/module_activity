@@ -45,9 +45,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereSubjectId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedAt($value)
- * @mixin \Eloquent
  */
-class Activity extends SpatieActivity {
+class Activity extends SpatieActivity
+{
     protected $fillable=['id','log_name','description','subject_type','event','subject_id','causer_type','causer_id','properties','batch_uuid','created_at','updated_at'];
 
     /**
