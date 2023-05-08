@@ -1,0 +1,28 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+    paths:
+        - .
+    excludePaths:
+        - ./build/*
+        - ./vendor/*
+        - ./*/vendor/*
+        - ./docs/*
+        - ./Tests/*
+        - ./_ide_helper.php
+    
+    bootstrapFiles:
+
+    
+    scanFiles:
+        
+
+    tmpDir: build/phpstan
+    reportUnmatchedIgnoredErrors: false
+    #checkOctaneCompatibility: false
+    #checkModelProperties: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+   

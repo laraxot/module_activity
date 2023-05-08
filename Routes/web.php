@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,6 @@
 |
 */
 
-Route::prefix('activity')->group(function() {
+Route::prefix('activity')->group(function () {
     Route::get('/', 'ActivityController@index');
 });
