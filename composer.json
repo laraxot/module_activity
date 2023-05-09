@@ -10,8 +10,7 @@
             "providers": [
                 "Modules\\Activity\\Providers\\ActivityServiceProvider"
             ],
-            "aliases": {
-            }
+            "aliases": {}
         }
     },
     "autoload": {
@@ -21,7 +20,7 @@
     },
     "require": {
         "spatie/laravel-activitylog": "^4.7",
-        "illuminate/contracts": "^8.83|^9.30",
+        "illuminate/contracts": "^8.83|^9.30|^10.0",
         "laraxot/module_xot": "dev-master",
         "laraxot/module_cms": "dev-master"
     },
