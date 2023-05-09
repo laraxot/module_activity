@@ -26,7 +26,8 @@
         "laraxot/module_cms": "dev-master"
     },
     "require-dev": {
-        "nunomaduro/larastan": "^2.0"
+        "nunomaduro/larastan": "^2.0",
+        "orchestra/testbench": "*"
     },
     "scripts": {
         "post-autoload-dump": [
