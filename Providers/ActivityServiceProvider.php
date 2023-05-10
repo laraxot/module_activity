@@ -11,18 +11,21 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 /**
  * Undocumented class.
  */
-class ActivityServiceProvider extends XotBaseServiceProvider {
+class ActivityServiceProvider extends XotBaseServiceProvider
+{
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
     public string $module_name = 'activity';
 
-    public function bootCallback(): void {
+    public function bootCallback(): void
+    {
         // ...
     }
 
-    public function registerCallback(): void {
+    public function registerCallback(): void
+    {
         // ...
     }
 }

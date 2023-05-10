@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 use Modules\Cms\Models\Panels\XotBasePanel;
 use Modules\Xot\Contracts\RowsContract;
 
-class ActivityPanel extends XotBasePanel {
+class ActivityPanel extends XotBasePanel
+{
     /**
      * The model the resource corresponds to.
      */
@@ -31,11 +32,13 @@ class ActivityPanel extends XotBasePanel {
     /**
      * The relationships that should be eager loaded on index queries.
      */
-    public function with(): array {
+    public function with(): array
+    {
         return [];
     }
 
-    public function search(): array {
+    public function search(): array
+    {
         return [];
     }
 
@@ -44,14 +47,16 @@ class ActivityPanel extends XotBasePanel {
      *
      * @param \Modules\Activity\Models\Activity $row
      */
-    public function optionLabel($row): string {
+    public function optionLabel($row): string
+    {
         return 'To Set';
     }
 
     /**
      * index navigation.
      */
-    public function indexNav(): ?Renderable {
+    public function indexNav(): ?Renderable
+    {
         return null;
     }
 
@@ -62,7 +67,8 @@ class ActivityPanel extends XotBasePanel {
      *
      * @return RowsContract
      */
-    public function indexQuery(array $data, $query) {
+    public function indexQuery(array $data, $query)
+    {
         // return $query->where('user_id', $request->user()->id);
         return $query;
     }
@@ -71,7 +77,8 @@ class ActivityPanel extends XotBasePanel {
      * Get the fields displayed by the resource.
         'value'=>'..',
      */
-    public function fields(): array {
+    public function fields(): array
+    {
         return [
             0 => (object) [
                 'type' => 'Id',
@@ -140,7 +147,8 @@ class ActivityPanel extends XotBasePanel {
     /**
      * Get the tabs available.
      */
-    public function tabs(): array {
+    public function tabs(): array
+    {
         $tabs_name = [];
 
         return $tabs_name;
@@ -149,7 +157,8 @@ class ActivityPanel extends XotBasePanel {
     /**
      * Get the cards available for the request.
      */
-    public function cards(Request $request): array {
+    public function cards(Request $request): array
+    {
         return [];
     }
 
@@ -158,21 +167,24 @@ class ActivityPanel extends XotBasePanel {
      *
      * @param \Illuminate\Http\Request $request
      */
-    public function filters(Request $request = null): array {
+    public function filters(Request $request = null): array
+    {
         return [];
     }
 
     /**
      * Get the lenses available for the resource.
      */
-    public function lenses(Request $request): array {
+    public function lenses(Request $request): array
+    {
         return [];
     }
 
     /**
      * Get the actions available for the resource.
      */
-    public function actions(): array {
+    public function actions(): array
+    {
         return [];
     }
 }

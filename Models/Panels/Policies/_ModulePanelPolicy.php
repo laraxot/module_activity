@@ -1,11 +1,11 @@
 <?php
-namespace Modules\Activity\Models\Panels\Policies;
 
-use Illuminate\Auth\Access\HandlesAuthorization;
-use Modules\LU\Models\User as User;
-use Modules\Activity\Models\Panels\Policies\_ModulePanelPolicy as Post; 
+declare(strict_types=1);
+
+namespace Modules\Activity\Models\Panels\Policies;
 
 use Modules\Cms\Models\Panels\Policies\XotBasePanelPolicy;
 
-class _ModulePanelPolicy extends XotBasePanelPolicy {
+class _ModulePanelPolicy extends XotBasePanelPolicy
+{
 }
