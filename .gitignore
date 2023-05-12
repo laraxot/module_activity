@@ -28,3 +28,4 @@ Homestead.json
 *.lock
 package-lock.json
 build
+/docs/package-lock.json
