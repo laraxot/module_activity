@@ -18,22 +18,22 @@ jobs:
       uses: actions/checkout@master
 
     - name: Validate composer.json and composer.lock
-      run: composer validate
+      run: cd docs && composer validate
 
     - name: Composer
-      run: composer install --no-progress --no-suggest
+      run: cd docs && composer install --no-progress --no-suggest
 
     - name: Node
-      run: npm install
+      run: cd docs && npm install
       
     - name: Production
-      run: npm run prod
+      run: cd docs && npm run prod
       
     - name: CNAME
-      run: echo "privacyfed.github.io/doc_pfed" > ./build_production/CNAME
+      run: cd docs && echo "laraxot.github.io/module_chart" > ./build_production/CNAME
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         branch: gh-pages
-        folder: build_production
+        folder: ./docs/build_production
