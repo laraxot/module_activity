@@ -26,10 +26,8 @@
         "laraxot/module_cms": "dev-master"
     },
     "require-dev": {
-<<<<<<< Updated upstream
-        "nunomaduro/larastan": "^2.0",
-        "orchestra/testbench": "*"
-=======
+        
+        
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.9",
         "nunomaduro/larastan": "^2.0.1",
@@ -41,7 +39,6 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "spatie/laravel-ray": "^1.26"
->>>>>>> Stashed changes
     },
     "scripts": {
         "post-autoload-dump": [
@@ -63,13 +60,5 @@
         }
     },
     "minimum-stability": "dev",
-<<<<<<< Updated upstream
     "prefer-stable": true
-=======
-    "prefer-stable": true,
-    "repositories": [{
-        "type": "composer",
-        "url": "https://wire-elements-pro.composer.sh"
-    }]
->>>>>>> Stashed changes
 }
