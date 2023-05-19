@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('activity')->group(function () {
+/*Route::prefix('activity')->group(function () {
     Route::get('/', 'ActivityController@index');
 });
+*/
