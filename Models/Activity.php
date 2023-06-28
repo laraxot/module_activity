@@ -24,6 +24,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $causer
  * @property \Illuminate\Support\Collection                $changes
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $subject
+ * @property string|null                                   $field_name
  *
  * @method static Builder|Activity                               causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static Builder|Activity                               forBatch(string $batchUuid)
@@ -51,6 +52,7 @@ class Activity extends SpatieActivity
 {
     protected $fillable = ['id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'];
 
+    protected $attributes = ['field_name'];
     /**
      * @var string
      */
