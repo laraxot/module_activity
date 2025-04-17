@@ -1,0 +1,16 @@
+{
+    "name": "laraxot/module_activity",
+    "description": "",
+    "license": "MIT",
+    "homepage": "https://laraxot.github.io/module_activity",
+    "require": {
+        "tightenco/jigsaw": "^1.6",
+        "tightenco/jigsaw-docs-template": "^1.1",
+        "samdark/sitemap": "^2.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Listeners\\": "listeners/"
+        }
+    }
+}
